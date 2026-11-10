@@ -1,0 +1,175 @@
+@media (prefers-reduced-motion: no-preference) {
+  .palavra {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    padding-bottom: 0.1em;
+  }
+  .palavra > span {
+    display: inline-block;
+    transform: translateY(110%);
+    animation: subir 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+  .palavra:nth-child(2) > span {
+    animation-delay: 0.12s;
+  }
+  .palavra:nth-child(3) > span {
+    animation-delay: 0.24s;
+  }
+
+  .saudacao,
+  .frase,
+  .acoes {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: entrar 0.7s ease-out forwards;
+  }
+  .saudacao {
+    animation-delay: 0.1s;
+  }
+  .frase {
+    animation-delay: 0.6s;
+  }
+  .acoes {
+    animation-delay: 0.8s;
+  }
+
+  .apresentacao-visual {
+    animation: flutuar 6s ease-in-out 2s infinite;
+  }
+  .linha {
+    opacity: 0;
+    animation: aparecer 0.01s forwards;
+  }
+  .linha:nth-child(1) {
+    animation-delay: 1s;
+  }
+  .linha:nth-child(2) {
+    animation-delay: 1.4s;
+  }
+  .linha:nth-child(3) {
+    animation-delay: 1.8s;
+  }
+  .linha:nth-child(4) {
+    animation-delay: 2.2s;
+  }
+  .linha:nth-child(5) {
+    animation-delay: 2.6s;
+  }
+  .linha:nth-child(6) {
+    animation-delay: 3s;
+  }
+  .linha:nth-child(7) {
+    animation-delay: 3.4s;
+  }
+
+  .texto-digitado {
+    border-right: 3px solid currentColor;
+    padding-right: 4px;
+    animation: piscar 1s steps(1) infinite;
+  }
+
+  .faixa-trilho {
+    animation: rolar 32s linear infinite;
+  }
+  .faixa:hover .faixa-trilho {
+    animation-play-state: paused;
+  }
+
+  .menu a {
+    background: linear-gradient(currentColor, currentColor) left bottom / 0 3px
+      no-repeat;
+    transition: background-size 0.3s;
+  }
+  .menu a:hover,
+  .menu a:focus-visible {
+    background-size: 100% 3px;
+  }
+
+  .botao {
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+  }
+  .botao:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 0 var(--tinta);
+  }
+  #contato .botao:hover {
+    box-shadow: 5px 5px 0 var(--texto-suave);
+  }
+
+  .filtros button {
+    transition:
+      background 0.2s,
+      color 0.2s;
+  }
+
+  .projeto {
+    transition:
+      transform 0.25s,
+      border-color 0.25s;
+  }
+  .projeto:hover {
+    transform: translateY(-6px);
+    border-color: var(--amarelo);
+  }
+
+  .js-animacao .barra::after {
+    width: 0;
+    transition: width 1.1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .js-animacao .visivel .barra::after {
+    width: var(--nivel);
+  }
+
+  .js-animacao .projeto {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  .js-animacao .visivel .projeto {
+    opacity: 1;
+    transform: none;
+    transition:
+      opacity 0.6s,
+      transform 0.6s,
+      border-color 0.25s;
+    transition-delay: calc(var(--ordem) * 90ms);
+  }
+  .js-animacao .visivel .projeto:hover {
+    transform: translateY(-6px);
+    transition-delay: 0s;
+  }
+
+  @keyframes subir {
+    to {
+      transform: none;
+    }
+  }
+  @keyframes entrar {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes aparecer {
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes flutuar {
+    50% {
+      transform: translateY(-12px) rotate(-1deg);
+    }
+  }
+  @keyframes piscar {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @keyframes rolar {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}

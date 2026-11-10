@@ -1,0 +1,76 @@
+@media (max-width: 900px) {
+  .apresentacao {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding-bottom: 64px;
+  }
+  .apresentacao-visual {
+    flex: none;
+    width: 100%;
+    max-width: 440px;
+  }
+  .sobre-e-extras {
+    flex-direction: column;
+    gap: 40px;
+  }
+  aside {
+    flex: none;
+    width: 100%;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .barra-superior {
+    flex-wrap: wrap;
+  }
+  .botao-menu {
+    display: inline-block;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    padding-top: 12px;
+  }
+  .menu.aberto {
+    display: flex;
+  }
+  .menu a {
+    padding: 14px 0;
+    border-top: 2px solid rgba(24, 24, 27, 0.18);
+  }
+  h1 {
+    font-size: 2.9rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .frase {
+    font-size: 1.15rem;
+  }
+  .acoes {
+    flex-direction: column;
+  }
+  .botao {
+    text-align: center;
+  }
+  .secao {
+    padding: 60px 6vw;
+  }
+  .projeto {
+    flex-basis: 100%;
+    padding: 22px;
+  }
+  .codigo {
+    font-size: 0.8rem;
+  }
+  th,
+  td {
+    padding: 12px;
+  }
+}

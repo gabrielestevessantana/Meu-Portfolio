@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Gabriel Esteves Santana, estudante de Engenharia de Software."
+    />
+    <title>Portfólio - Gabriel Esteves Santana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animacoes.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Cabeçalho do portfólio -->
+    <header class="cabecalho">
+      <div class="barra-superior">
+        <a class="marca" href="#inicio" aria-label="Voltar ao início">GES</a>
+        <button
+          class="botao-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          Menu
+        </button>
+        <nav class="menu" id="menu-principal" aria-label="Menu principal">
+          <a href="#sobre">Sobre mim</a>
+          <a href="#conhecimentos">Conhecimentos</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+
+      <div class="apresentacao" id="inicio">
+        <div class="apresentacao-texto">
+          <p class="saudacao">Olá, eu sou</p>
+          <h1>
+            <span class="palavra"><span>Gabriel</span></span>
+            <span class="palavra"><span>Esteves</span></span>
+            <span class="palavra"><span>Santana</span></span>
+          </h1>
+          <p class="frase">
+            Estudante de Engenharia de Software na UCSAL, criando meus primeiros
+            projetos com
+            <strong class="texto-digitado">Java e Spring Boot</strong>
+          </p>
+          <div class="acoes">
+            <a class="botao botao-escuro" href="#projetos">Ver meus projetos</a>
+            <a class="botao botao-contorno" href="#contato"
+              >Entrar em contato</a
+            >
+          </div>
+        </div>
+        <div class="apresentacao-visual" aria-hidden="true">
+          <div class="janela-codigo">
+            <div class="janela-topo">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="codigo">
+              <span class="linha">const gabriel = {</span>
+              <span class="linha">
+                <b>curso</b>: "Engenharia de Software",</span
+              >
+              <span class="linha"> <b>faculdade</b>: "UCSAL",</span>
+              <span class="linha">
+                <b>aprendendo</b>: ["Java", "Front-End"],</span
+              >
+              <span class="linha"> <b>objetivo</b>: "primeiros projetos",</span>
+              <span class="linha"> <b>curiosidade</b>: "sempre ligada",</span>
+              <span class="linha">};</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faixa" aria-hidden="true">
+        <div class="faixa-trilho">
+          <ul>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PostgreSQL</li>
+            <li>Python</li>
+            <li>Maven</li>
+            <li>Postman</li>
+          </ul>
+          <ul>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PostgreSQL</li>
+            <li>Python</li>
+            <li>Maven</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <div class="secao sobre-e-extras">
+        <section id="sobre">
+          <h2>Sobre mim</h2>
+          <p>
+            Meu nome é Gabriel Esteves Santana, sou estudante de Engenharia de
+            Software na Universidade Católica de Salvador e me formei no SENAI
+            no final de 2025. Estou aprendendo HTML, CSS e JavaScript na
+            disciplina de Programação Front-End, além de Java e Spring Boot para
+            criar APIs.
+          </p>
+          <p>
+            Aprendo melhor praticando: faço exercícios, monto projetos pequenos
+            e evoluo cada um deles. Quero desenvolver projetos que unam uma
+            interface bem cuidada com um back-end sólido.
+          </p>
+        </section>
+
+        <aside>
+          <h2>Informações extras</h2>
+          <p>Objetivo atual: desenvolver meus primeiros projetos Front-End.</p>
+          <ul>
+            <li>Formação: Engenharia de Software (UCSAL)</li>
+            <li>Interesses: desenvolvimento web, Java, Python e SQL</li>
+            <li>
+              GitHub:
+              <a href="https://github.com/seu-usuario"
+                >github.com/seu-usuario</a
+              >
+            </li>
+            <li>
+              LinkedIn:
+              <a href="https://linkedin.com/in/seu-usuario"
+                >linkedin.com/in/seu-usuario</a
+              >
+            </li>
+          </ul>
+        </aside>
+      </div>
+
+      <section class="secao" id="conhecimentos">
+        <h2>Conhecimentos</h2>
+        <ul class="lista-conhecimentos">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>PostgreSQL</li>
+          <li>Python</li>
+        </ul>
+
+        <div class="tabela-rolagem">
+          <table>
+            <caption>
+              Minhas habilidades por tecnologia
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Tecnologia</th>
+                <th scope="col">Nível</th>
+                <th scope="col">Onde aplico</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>
+                  Intermediário<span class="barra" style="--nivel: 60%"></span>
+                </td>
+                <td>Estrutura e semântica das páginas</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>
+                  Iniciante<span class="barra" style="--nivel: 30%"></span>
+                </td>
+                <td>Estilo, Flexbox e responsividade</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>
+                  Iniciante<span class="barra" style="--nivel: 30%"></span>
+                </td>
+                <td>Interatividade no portfólio</td>
+              </tr>
+              <tr>
+                <td>Java e Spring Boot</td>
+                <td>
+                  Iniciante<span class="barra" style="--nivel: 30%"></span>
+                </td>
+                <td>APIs, models e controllers</td>
+              </tr>
+              <tr>
+                <td>PostgreSQL</td>
+                <td>
+                  Iniciante<span class="barra" style="--nivel: 30%"></span>
+                </td>
+                <td>Modelagem e consultas SQL</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>
+                  Iniciante<span class="barra" style="--nivel: 30%"></span>
+                </td>
+                <td>Programas de cadastro e automações</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="secao" id="projetos">
+        <h2>Projetos</h2>
+        <div
+          class="filtros"
+          role="group"
+          aria-label="Filtrar projetos por área"
+        >
+          <button type="button" data-filtro="todos" aria-pressed="true">
+            Todos
+          </button>
+          <button type="button" data-filtro="java" aria-pressed="false">
+            Java
+          </button>
+          <button
+            type="button"
+            data-filtro="banco-de-dados"
+            aria-pressed="false"
+          >
+            Banco de dados
+          </button>
+          <button type="button" data-filtro="python" aria-pressed="false">
+            Python
+          </button>
+          <button type="button" data-filtro="front-end" aria-pressed="false">
+            Front-End
+          </button>
+        </div>
+
+        <div class="lista-projetos">
+          <article class="projeto" data-categoria="java">
+            <h3>API de produtos</h3>
+            <p>
+              API para cadastro de produtos, praticando models, controllers e
+              requisições POST.
+            </p>
+            <ul class="tecnologias">
+              <li>Java 21</li>
+              <li>Spring Boot</li>
+              <li>Maven</li>
+            </ul>
+            <a href="#">Ver repositório no GitHub</a>
+          </article>
+
+          <article class="projeto" data-categoria="banco-de-dados">
+            <h3>Banco de dados acadêmico</h3>
+            <p>
+              Esquema com universidade, curso, disciplina, professor, turma,
+              aluno e matrícula, ligados por chaves estrangeiras.
+            </p>
+            <ul class="tecnologias">
+              <li>PostgreSQL</li>
+              <li>SQL</li>
+            </ul>
+            <a href="#">Ver scripts no GitHub</a>
+          </article>
+
+          <article class="projeto" data-categoria="python">
+            <h3>Cadastro de alunos</h3>
+            <p>
+              Programa de terminal com menu em match case para cadastrar e
+              listar alunos usando dicionário e lista.
+            </p>
+            <ul class="tecnologias">
+              <li>Python</li>
+            </ul>
+            <a href="#">Ver código no GitHub</a>
+          </article>
+
+          <article class="projeto" data-categoria="front-end">
+            <h3>Portfólio pessoal</h3>
+            <p>
+              Este site, em evolução a cada aula: HTML semântico, CSS, animações
+              e responsividade.
+            </p>
+            <ul class="tecnologias">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <a href="#">Ver repositório no GitHub</a>
+          </article>
+
+          <article class="projeto projeto-vazio">
+            <h3>Próximo projeto</h3>
+            <p>Espaço reservado para o próximo projeto que eu terminar.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="secao" id="contato">
+        <h2>Contato</h2>
+        <form id="formulario-contato">
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            autocomplete="name"
+            required
+          />
+
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+          />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+
+          <button class="botao botao-amarelo" type="submit">
+            Enviar mensagem
+          </button>
+          <p
+            class="mensagem-formulario"
+            id="mensagem-formulario"
+            role="status"
+          ></p>
+        </form>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <p>Portfólio de Gabriel Esteves Santana - 2026</p>
+      <p>
+        Desenvolvido como atividade da disciplina de Programação Front-End
+        (UCSAL) e em constante evolução.
+      </p>
+    </footer>
+  </body>
+</html>
